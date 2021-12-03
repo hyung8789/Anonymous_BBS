@@ -1,0 +1,109 @@
+ /* 게시판 리스트 아이디 */
+ #boardList {
+     /* 각 셀의 테두리에 대해 상쇄 */
+     border-collapse: collapse;
+     width: 100%;
+ }
+
+ /* 게시판 리스트 아이디의 하위에 있는 table 머리 태그 */
+ #boardList thead {
+     color: white;
+     font-size: 20px;
+     font-weight: bold;
+ }
+
+ /* 게시판 리스트 아이디의 하위에 있는 table 몸통 태그 */
+ #boardList tbody {
+     color: white;
+     font-size: 18px;
+ }
+
+ /* 게시판 리스트 아이디의 하위에 있는 table 하단 태그 */
+ #boardList tfoot {
+     /* Margin은 Object와 화면과의 여백 (외부여백), Padding은 Object내의 내부여백 */
+     padding-top: 5px;
+     padding-bottom: 5px;
+     color: white;
+ }
+
+ /* 게시판 리스트 아이디의 하위에 있는 table 머리 셀 태그 */
+ #boardList th {
+     padding-top: 5px;
+     padding-bottom: 5px;
+     /* 아래쪽에 선 */
+     border-bottom: 1px solid white;
+     background-color: #343A40;
+     color: white;
+ }
+
+ /* 게시판 리스트 아이디의 하위에 있는 table 몸통 태그의 하위에 있는 tr(테이블 행) 태그 */
+ #boardList tbody tr {
+     /* 아래쪽에 선 */
+     border-bottom: 1px solid white;
+     height: 20px;
+ }
+
+ /* 게시판 리스트 아이디의 하위에 있는 table 하단 태그의 하위에 있는 tr(테이블 행) 태그 */
+ #boardList tfoot tr {
+     /* 아래쪽에 선 */
+     border-bottom: 1px solid white;
+     height: 40px;
+ }
+
+ /* 게시판 리스트 아이디의 하위에 있는 등록 된 게시글이 존재하지 않음 메세지 클래스 */
+ #boardList .postNothingToShowMessage {
+     padding-top: 300px;
+     padding-bottom: 300px;
+     text-align: center;
+     font-weight: bold;
+ }
+
+ /* 게시판 리스트 아이디의 하위에 있는 게시글 번호 클래스 */
+ #boardList .postNum {
+     width: 10%;
+     text-align: center;
+ }
+
+ /* 게시판 리스트 아이디의 하위에 있는 게시글 제목 클래스 */
+ #boardList .postTitle {
+     width: 60%;
+     text-align: left;
+ }
+
+ /* 게시판 리스트 아이디의 하위에 있는 게시글 작성일 클래스 */
+ #boardList .postDate {
+     width: 20%;
+     text-align: center;
+ }
+
+ /* 게시판 리스트 아이디의 하위에 있는 게시글 조회수 클래스 */
+ #boardList .postViewCount {
+     width: 10%;
+     text-align: center;
+ }
+
+ /* 게시판 리스트 아이디의 하위에 있는 첨부 아이콘 클래스 */
+ #boardList .postAttachment {
+     width: 20px;
+     height: 20px;
+     text-align: center;
+ }
+
+ /* 미 사용 : 게시판 리스트 아이디의 하위에 있는 table 몸통 내의 table 행에 대해 짝수 번째 자식에 대한 상태 (가상 선택자) */
+ #boardList tbody tr:nth-child(even) {}
+
+ /* 게시판 리스트 아이디의 하위에 있는 table 몸통 내의 게시글 리스트 아이디를 가진 table 행에 대해 마우스를 올린 상태 (가상 선택자) */
+ #boardList tbody tr:hover#postList {
+     background-color: #33A64C;
+ }
+
+ /* 게시판 리스트 아이디의 하위에 있는 버튼 영역 클래스 */
+ #boardList .buttonArea {
+     text-align: right;
+ }
+
+ /* 게시판 리스트 아이디의 하위에 있는 button 속성을 가지는 input (입력) 태그 */
+ #boardList input[type="button"] {
+    margin: 10px 10px;
+     width: 150px;
+ }

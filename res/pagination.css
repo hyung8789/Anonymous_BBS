@@ -1,0 +1,46 @@
+/* 페이징 영역 클래스 */
+.pagingArea {
+    text-align: center;
+}
+
+/* 페이지 번호 클래스 */
+.pageNum {
+    display: inline-block;
+    border: 1px solid transparent;
+    color: white;
+
+    /* 세로여백, 가로여백*/
+    margin: 0px 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* 페이지 번호 클래스에 대해 마우스를 올린 상태 (가상 선택자) */
+.pageNum:hover {
+    color: #33A64C;
+    font-weight: bold;
+    /* 경계션 주위 선 두께 및 색상 */
+    border: 1px solid red;
+}
+
+/* 페이지 번호 클래스에 대해 현재 선택 된 하위 current 클래스 */
+.pageNum.current {
+    color: #33A64C;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* 페이지 이동 클래스 */
+.pageMove {
+    color: white;
+    text-decoration: none;
+}
+
+/* 페이지 이동 클래스에 대해 마우스를 올린 상태 */
+.pageMove:hover {
+    color: #33A64C;
+    font-weight: bold;
+
+    /* 경계션 주위 선 두께 및 색상 */
+    border: 1px solid red;
+}

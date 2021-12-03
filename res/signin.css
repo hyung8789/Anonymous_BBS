@@ -1,0 +1,39 @@
+ /* 로고 영역 아이디 */
+ #logoAreaId {
+     /* 로고 영역 내의 로고 이미지를 가운데로 정렬하기 위해 가운데 정렬 속성 지정 */
+
+     text-align: center;
+ }
+
+ /* 로고 이미지 아이디 */
+ #logoImageId {
+     /* 
+       브라우저의 화면 크기에 따라 자동으로 조절되도록, 
+       최대, 최소 가로길이 고정, 세로길이는 가로길이에 따라 브라우저가 요소의 너비를 계산하고 선택하도록 지정 
+     */
+
+     min-width: 400px;
+     max-width: 400px;
+     height: auto;
+ }
+
+ /* 회원가입 폼 내의 회원가입 영역 아이디 */
+ #signUpAreaId {
+     color: white;
+ }
+
+ /* 로그인 폼 내의 로그인 영역 아이디 내의 p (단락) 태그 */
+ #signInAreaId p {
+     color: black;
+ }
+
+ /* fieldset (폼을 위한 요소 그룹) 태그 */
+ fieldset {
+     /* 가운데로 정렬하기 위해 margin (여백)을 자동으로 지정 */
+
+     background-color: white;
+     min-width: 200px;
+     max-width: 200px;
+     height: auto;
+     margin: auto;
+ }

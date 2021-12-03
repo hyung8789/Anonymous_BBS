@@ -1,0 +1,47 @@
+/* 에디터 아이디 */
+#editor {
+    /* 각 셀의 테두리에 대해 상쇄 */
+    border-collapse: collapse;
+    width: 100%;
+    color: white;
+}
+
+/* 에디터 아이디의 하위에 있는 table 머리 태그 */
+#editor thead {
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* 에디터 아이디의 하위에 있는 게시글 타이틀 아이디 */
+#editor #postTitle {
+    width: 100%;
+}
+
+/* 에디터 아이디의 하위에 있는 게시글 내용 아이디 */
+#editor #postContent {
+    width: 100%;
+    resize: none;
+}
+
+/* 에디터 아이디의 하위에 있는 라디오 그룹 영역 클래스 */
+#editor .radioGroupArea {
+    text-align: left;
+}
+
+/* 에디터 아이디의 하위에 있는 비밀번호 영역 클래스 */
+#editor .passwordArea {
+    text-align: right;
+}
+
+/* 에디터 아이디의 하위에 있는 password 속성을 가지는 input (입력) 태그 */
+#editor input[type="password"] {
+    width: fit-content;
+}
+
+/* 에디터 아이디의 하위에 있는 button, submit 속성을 가지는 input (입력) 태그 */
+#editor input[type="button"],
+#editor input[type="submit"] {
+    margin: 10px 10px;
+    width: 150px;
+}

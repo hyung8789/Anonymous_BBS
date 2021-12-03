@@ -1,0 +1,155 @@
+/* 게시판 뷰 클래스 */
+.boardView {
+    /* 각 셀의 테두리에 대해 상쇄 */
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* 게시판 뷰 클래스의 하위에 있는 table 머리 태그 */
+.boardView thead {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ /* 게시판 뷰 클래스의 하위에 있는 등록 된 게시글이 존재하지 않음 메세지 클래스 */
+ .boardView .postNothingToShowMessage {
+    text-align: center;
+}
+
+/* 게시판 뷰 클래스의 하위에 있는 table 몸통 태그 */
+.boardView tbody {
+    color: white;
+    font-size: 18px;
+}
+
+/* 게시판 뷰 클래스의 하위에 있는 table 하단 태그의 하위에 있는 tr(테이블 행) 태그 */
+.boardView tfoot tr {
+    /* 아래쪽에 선 */
+    border-bottom: 1px solid white;
+    height: 40px;
+}
+
+/* 게시판 뷰 클래스의 하위에 있는 table 머리 셀 태그 */
+.boardView th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* 아래쪽에 선 */
+    border-bottom: 1px solid white;
+    background-color: #343A40;
+    color: white;
+}
+
+/* 게시판 뷰 클래스의 하위에 있는 table 몸통 태그의 하위에 있는 tr(테이블 행) 태그 */
+.boardView tbody tr {
+    /* 아래쪽에 선 */
+    border-bottom: 1px solid white;
+    height: 20px;
+}
+
+/* 게시판 뷰 클래스의 하위에 있는 table 하단 태그의 하위에 있는 tr(테이블 행) 태그 */
+.boardView tfoot tr {
+    /* 아래쪽에 선 */
+    border-bottom: 1px solid white;
+    height: 40px;
+}
+
+/* 게시판 뷰 클래스의 하위에 있는 게시글 제목 클래스 */
+.boardView .postTitle {
+    padding-left: 10px;
+    width: 80%;
+    text-align: left;
+}
+
+/* 게시판 뷰 클래스의 하위에 있는 게시글 내용 클래스 */
+.boardView .postContent {
+    /* 내용에 대해 범위 초과 시 자동 줄바꿈 */
+    word-break: break-all;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* 게시판 뷰 클래스의 하위에 있는 게시글 작성일 클래스 */
+.boardView .postDate {
+    padding-right: 10px;
+    width: 20%;
+    text-align: right;
+}
+
+/* 게시판 뷰 클래스의 하위에 있는 첨부 아이콘 클래스 */
+.boardView .postAttachment {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+/* 게시판 뷰 클래스의 하위에 있는 댓글 번호 클래스 */
+.boardView .replyNum {
+    width: 10%;
+    text-align: center;
+}
+
+/* 게시판 뷰 클래스의 하위에 있는 댓글 내용 클래스 */
+.boardView .replyContent {
+    /* 내용에 대해 범위 초과 시 자동 줄바꿈 */
+    word-break: break-all;
+    width: 70%;
+    text-align: left;
+}
+
+/* 게시판 뷰 클래스의 하위에 있는 댓글 작성일 클래스 */
+.boardView .replyDate {
+    width: 20%;
+    text-align: center;
+}
+
+/* 게시판 뷰 클래스의 하위에 있는 등록 된 댓글이 존재하지 않음 메세지 클래스 */
+.boardView .replyNothingToShowMessage {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* 게시판 뷰 클래스의 하위에 있는 버튼 영역 클래스 */
+.boardView .buttonArea {
+    text-align: right;
+}
+
+/* 게시판 뷰 클래스의 하위에 있는 button 속성을 가지는 input (입력) 태그 */
+.boardView input[type="button"] {
+    margin: 10px 10px;
+    width: 100px;
+}
+
+/* 댓글 입력 폼 테이블 클래스 */
+.replyFormTable {
+    border-collapse: collapse;
+    width: 100%;
+
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 댓글 입력 폼 테이블 클래스의 하위에 있는 textarea 태그 */
+.replyFormTable textarea {
+    width: 100%;
+    resize: none;
+}
+
+/* 댓글 입력 폼 테이블 클래스의 하위에 있는 password 속성을 가지는 input (입력) 태그 */
+.replyFormTable input[type="password"] {
+    width: fit-content;
+}
+
+/* 댓글 입력 폼 테이블 클래스의 하위에 있는 버튼 영역 클래스 */
+.replyFormTable .buttonArea {
+    text-align: right;
+}
+
+/* 댓글 입력 폼 테이블 클래스의 하위에 있는 submit 속성을 가지는 input (입력) 태그 */
+.replyFormTable input[type="submit"] {
+    margin: 10px 10px;
+    width: 150px;
+}
