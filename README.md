@@ -45,7 +45,7 @@ https://kciter.so/posts/basic-web-hacking
 
 manager 및 controller에 대해 구조 리팩토링
 
-모든 폴더에 대해 디렉토리 리스팅방지 및 php 직접 호출 방지
+모든 폴더에 대해 디렉토리 리스팅방지 및 php 직접 호출 방지 (recursive htaccess)
 https://stackoverflow.com/questions/409496/prevent-direct-access-to-a-php-include-file
 
 세션 및 쿠키에 대한 보안처리
