@@ -70,7 +70,7 @@ if (isAlreadySignIn()) { //이미 로그인되었을 경우
                 </p>
 
                 <p>
-                    <input type="button" value="회원가입" button onclick="window.open('./signup.php','',
+                    <input type="button" value="회원가입" button onclick="window.open('<?php echo FrontendScript::SIGN_UP ?>','',
                     'width=500,height=400,location=none,status=no,scrollbars=yes')"; />
                 </p>
             </div>

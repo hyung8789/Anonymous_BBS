@@ -78,8 +78,9 @@ if (array_key_exists(Key::POST_PAGE_NUM, $currentUrlQueryArray) && is_numeric($c
 
             if (count($postListArray) >= 1) { //게시글 목록이 존재하면
                 foreach ($postListArray as $row) { //결과의 각 행에 대해
+                    $postLink = UrlQueryUtil::genUrlIncQuery(FrontendScript::VIEW, array(Key::POST_NUM => $row["글_번호"]));
                     $postTitleBuffer = "<td class='" . Key::POST_TITLE . "' " .
-                        "onclick=location.href='./view.php?" . Key::POST_NUM . "={$row["글_번호"]}'>
+                        "onclick=location.href='" . $postLink . "'>
                         {$row["글_제목"]}" . ($row["첨부파일_존재여부"] ?
                             " <img src='./res/attachment.png' class='" . Key::POST_ATTACHMENT . "'>" :
                             "") .
@@ -152,7 +153,7 @@ if (array_key_exists(Key::POST_PAGE_NUM, $currentUrlQueryArray) && is_numeric($c
                     ?>
                 </td>
                 <!-- 게시글 작성 버튼 출력 -->
-                <td class="buttonArea"><input type="button" onclick='location.href="./editor.php"' value="게시글 작성" /></td>
+                <td class="buttonArea"><input type="button" onclick='location.href="<?php echo FrontendScript::EDITOR ?>"' value="게시글 작성" /></td>
             </tr>
         </tfoot>
     </table>

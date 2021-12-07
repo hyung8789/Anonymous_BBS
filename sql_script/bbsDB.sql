@@ -67,8 +67,15 @@ DELIMITER $$
 CREATE TRIGGER 게시글_갱신_트리거
 BEFORE UPDATE ON 게시글
 	FOR EACH ROW
-BEGIN      
-	IF !(OLD.조회수 <> NEW.조회수) THEN -- 게시글 조회수 증가 시 본 트리거가 발동되므로 조회수만 변동 된 경우 작성일을 갱신하지 않음
+BEGIN
+	DECLARE 작성일_갱신_필요_여부 bool;
+    SET 작성일_갱신_필요_여부 = 
+    (OLD.글_제목 <> NEW.글_제목) OR 
+    (OLD.글_내용 <> NEW.글_내용) OR 
+    (OLD.첨부파일_원본이름 <> NEW.첨부파일_원본이름) OR
+    (OLD.첨부파일_저장이름 <> NEW.첨부파일_저장이름);
+
+	IF (작성일_갱신_필요_여부 = true) THEN -- 게시글 클릭에 의해 게시글 조회수 증가 시 본 트리거가 발동되므로 게시글 클릭에 의해 조회수만 변동 된 경우 작성일을 갱신하지 않음
 		CALL 공통_작성일_갱신(NEW.작성일);
 	END IF;
 END $$
